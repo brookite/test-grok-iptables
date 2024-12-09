@@ -1,5 +1,5 @@
 UNSIGNED_INT [0-9]+
-IPTABLES_ETHERNET IN=(?<in_device>[^\s]+)?( MAC=(?:[^\s]*))? OUT=(?<out_device>[^\s]+)?( PHYSIN=(?:[^\s]*))( MAC=(?:[^\s]*))?
+IPTABLES_ETHERNET IN=(?<in_device>[^\s]+)?( MAC=(?:[^\s]*))? OUT=(?<out_device>[^\s]+)?( PHYSIN=(?:[^\s]*))?( MAC=(?:[^\s]*))?
 
 IPTABLES_PORT_PAIR SPT=%{UNSIGNED_INT:src_port:int} DPT=%{UNSIGNED_INT:dst_port:int}
 
